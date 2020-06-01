@@ -16,9 +16,29 @@ app.get('/', (req, res) => {
     res.json({"message": "Welcome smilingwords"});
 });
 
-app.get('/smw', (req, res) => {
-    res.json({"message": "Welcome to EasyNotes application. Take notes quickly. Organize and keep track of all your notes."});
+app.get('/smw/owner', (req, res) => {
+    res.json({"message": "Mr. Gerhard Fischer"});
 });
+
+app.get('/smw/location', (req, res) => {
+    res.json({"message": "Smilingwords company is located on Vodna street 26, Kosice, Slovakia"});
+});
+
+app.get('/smw/hours', (req, res) => {
+    res.json({"message": "Opening hours for Smilings words company are between 8. am and 16. pm"});
+});
+
+app.get('/smw/employees', (req, res) => {
+    res.json({"message": "Owner is Mr. Gerhard Fisheer, Developers are Mr. Andrej Bilec, Dusan Scensny, Lenka Scensny, Stefan Simko. HR and Office Manager is Zuzana Bilcak"});
+});
+
+app.get('/smw/dogs', (req, res) => {
+    res.json({"message": "Owner Mr. Gerhard Fisher owns three dogs. Two are Italian Greyhounds, male and female. Male is called Sergej and female is called Zaha. Third dog is female chihuahua called "});
+});
+
+
+
+
 
 // listen for requests
 app.listen(PORT, () => {
